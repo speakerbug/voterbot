@@ -48,6 +48,22 @@ This is a tutorial on how to build a simple Messenger bot that utilizes Wit.ai t
 ## Setup codebase
 1. Make a new directory to place your code in. For the purposes of this tutorial we'll use 'voterbot'.
 1. Make a new file called `bot.js` and paste the code found in [bot.js](https://github.com/speakerbug/voterbot/blob/main/bot.js) in this repo.
-1. In the directory run the following commands:
+1. In the directory run the following commands to install dependencies:
     1. `npm init` _You can use all default values_
     1. `npm install claudia-bot-builder`
+1. Now use Claudia.js to push the code to Lambda and create endpoints automatically in the API Gateway.
+    1. `claudia create --region us-east-1 --api-module bot --configure-fb-bot` _This can take a while to run so be patient_
+1. You will now need to link the bot with your Facebook app.
+
+## Configure Facebook app
+1. From the `claudia create` command you should get an output similar to the one below:
+  ![claudia create output](https://speakerbug.github.io/voterbot/images-for-readme/claudia-create-output.png)
+1. Back in the Facebook Developer app dashboard under **Webhooks**, click **Add Callback URL**.
+  ![Add webhook](https://speakerbug.github.io/voterbot/images-for-readme/add-webhook.png)
+1. Use the values from terminal and enter them in as the callback URL like below and click **Verify and Save**.
+  ![Add callback url](https://speakerbug.github.io/voterbot/images-for-readme/add-url.png)
+  NEED TO ADD SUBSCRIPTIONS?
+1. Next, generate a token for your page to be accessed by the app. Under **Access Tokens** click **Generate Token** for your page.
+  ![Generate token](https://speakerbug.github.io/voterbot/images-for-readme/generate-token.png)
+1. Copy the token that was generated and paste it back in the terminal and hit enter. You should then be prompted for your **Facebook App Secret**. You can get this by clicking _Settings_ > _Basic_.
+  ![Settings menu](https://speakerbug.github.io/voterbot/images-for-readme/settings.png)
