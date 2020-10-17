@@ -11,6 +11,7 @@ This is a tutorial on how to build a simple Messenger bot that utilizes Wit.ai t
 * Node.js installed
 * NPM installed
 * Claudia.js installed (`npm install claudia -g`)
+* AWS CLI installed
 
 # Getting Started
 
@@ -30,6 +31,16 @@ This is a tutorial on how to build a simple Messenger bot that utilizes Wit.ai t
 1. Create a new *Programmatic access* user with the username `claudia`. *This IAM user will be used by Claudia.js to create the necessary resources for your bot on AWS automatically.*
   ![Screenshot of claudia user](https://speakerbug.github.io/voterbot/images-for-readme/create-user.png)
 1. Attach the following **existing policies directly** to the user `claudia`.
-    * AWSLambdaFullAccess
-    * AmazonAPIGatewayAdministrator
-    * IAMFullAccess
+    * `AWSLambdaFullAccess`
+    * `AmazonAPIGatewayAdministrator`
+    * `IAMFullAccess`
+1. You can leave the remaining settings set to whatever the defaults are. Once your user is created, make sure to take note of the Access Key ID and Access Key Secret (you can't view the secret again after you leave the confirmation page).
+1. Add this newly created IAM user to your `~/.aws/credentials` file. This is the file the AWS CLI uses for authentication to AWS.
+    1. You can create a new profile for `claudia` as to not interfere with any other credentials you have setup already.
+    1. Copy the following code snippet and add it to `~/.aws/credentials` replacing _YOUR_ID_ and _YOUR_SECRET_ with your Access Key ID and Access Key Secret from the confirmation screen.
+    ```
+    [claudia]
+    aws_access_key_id = _YOUR_ID_
+    aws_secret_access_key = _YOUR_SECRET_
+    ```
+    1. Run `export AWS_PROFILE=claudia` to set the `claudia` as the default profile for the AWS CLI to use.
