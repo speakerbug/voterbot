@@ -43,4 +43,11 @@ This is a tutorial on how to build a simple Messenger bot that utilizes Wit.ai t
     aws_access_key_id = _YOUR_ID_
     aws_secret_access_key = _YOUR_SECRET_
     ```
-    1. Run `export AWS_PROFILE=claudia` to set the `claudia` as the default profile for the AWS CLI to use.
+1. Run the command `export AWS_PROFILE=claudia` to set the `claudia` as the default profile for the AWS CLI to use.
+
+## Setup codebase
+1. Make a new directory to place your code in. For the purposes of this tutorial we'll use 'voterbot'.
+1. Make a new file called `bot.js` and paste the code found in [bot.js](https://github.com/speakerbug/voterbot/blob/main/bot.js) in this repo.
+1. In the directory run the following commands:
+    1. `npm init` _You can use all default values_
+    1. `npm install claudia-bot-builder`
