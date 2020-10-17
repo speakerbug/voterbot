@@ -28,6 +28,7 @@ This is a tutorial on how to build a simple Messenger bot that utilizes Wit.ai t
 1. Click *Add user*.
   ![Screenshot of add user button](https://speakerbug.github.io/voterbot/images-for-readme/iam-dashboard.png)
 1. Create a new *Programmatic access* user with the username `claudia`. _This IAM user will be used by Claudia.js to create the necessary resources for your bot on AWS automatically._
+  ![Screenshot of claudia user](https://speakerbug.github.io/voterbot/images-for-readme/create-user.png)
 1. Attach the following *existing policies directly* to the user `claudia`.
     * AWSLambdaFullAccess
     * AmazonAPIGatewayAdministrator
