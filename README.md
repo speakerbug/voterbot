@@ -82,4 +82,7 @@ This is a tutorial on how to build a simple Messenger bot that utilizes Wit.ai t
 1. Enter the **Wit app Server Access Token** which can be found on Wit.ai under the **Settings** page for your app under the **Management** section.
 
 # Test it out
-You should now be able to message your page and your bot will respond! 
+You should now be able to message your page and your bot will respond!
+
+# Additional resources
+[Facebook NPL Information](https://developers.facebook.com/docs/messenger-platform/built-in-nlp/)
