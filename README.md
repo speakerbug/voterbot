@@ -12,7 +12,9 @@ This is a tutorial on how to build a simple Messenger bot that utilizes Wit.ai t
 * NPM installed
 * Claudia.js installed (`npm install claudia -g`)
 
-# Setup Facebook App
+# Getting Started
+
+## Setup Facebook App
 1. Create a new app on [Facebook Developers](https://developers.facebook.com/apps/) for your Messenger bot.
   1. Choose `Manage Business Integrations`.
   1. Give your app a display name and enter your email address.
