@@ -10,7 +10,7 @@ This is a tutorial on how to build a simple Messenger bot that utilizes Wit.ai t
 * An AWS account (Must be able to create Lambda functions, API Gateway end-points, and IAM roles)
 * Node.js installed
 * NPM installed
-* Claudia.js installed (`npm install claudia -g`)
+* [Claudia.js](https://claudiajs.com/) installed (`npm install claudia -g`)
 * AWS CLI installed
 
 # Getting Started
