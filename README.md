@@ -15,6 +15,12 @@ This is a tutorial on how to build a simple Messenger bot that utilizes Wit.ai t
 
 # Getting Started
 
+## Setup Wit.ai
+1. Create a new app on the [apps page](https://wit.ai/apps) of Wit.ai.
+1. Create a new intent:
+    1. Type `Where can I vote?` as an **utterance** and assign it an **intent** of `findPollingPlace`. Click **Train and Validate**.
+    1. Type `When is the next election?` as an **utterance** and assign it an **intent** of `nextElection`. Click **Train and Validate**.
+
 ## Setup Facebook App
 1. Create a new app on [Facebook Developers](https://developers.facebook.com/apps/) for your Messenger bot.
     1. Choose **Manage Business Integrations**.
@@ -62,8 +68,18 @@ This is a tutorial on how to build a simple Messenger bot that utilizes Wit.ai t
   ![Add webhook](https://speakerbug.github.io/voterbot/images-for-readme/add-webhook.png)
 1. Use the values from terminal and enter them in as the callback URL like below and click **Verify and Save**.
   ![Add callback url](https://speakerbug.github.io/voterbot/images-for-readme/add-url.png)
-  NEED TO ADD SUBSCRIPTIONS?
+  NEED TO ADD SUBSCRIPTIONS? (note for henry)
 1. Next, generate a token for your page to be accessed by the app. Under **Access Tokens** click **Generate Token** for your page.
   ![Generate token](https://speakerbug.github.io/voterbot/images-for-readme/generate-token.png)
 1. Copy the token that was generated and paste it back in the terminal and hit enter. You should then be prompted for your **Facebook App Secret**. You can get this by clicking _Settings_ > _Basic_.
   ![Settings menu](https://speakerbug.github.io/voterbot/images-for-readme/settings.png)
+
+## Link Wit.ai to Facebook app
+1. Under **Built-In NLP**, choose the page your bot is linked to and click the switch to turn it on.
+  ![NLP settings](https://speakerbug.github.io/voterbot/images-for-readme/nlp-settings.png)
+1. Choose **Custom Model** from **Default Language Model**.
+1. Click **Link to existing Wit app**.
+1. Enter the **Wit app Server Access Token** which can be found on Wit.ai under the **Settings** page for your app under the **Management** section.
+
+# Test it out
+You should now be able to message your page and your bot will respond! 
