@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "name": "voterbot",
+    "role": "voterbot-executor",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "woqxn8ckhe",
+    "module": "bot"
+  }
+}

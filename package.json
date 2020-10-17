@@ -1,0 +1,15 @@
+{
+  "name": "voterbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "claudia": "^5.12.0",
+    "claudia-bot-builder": "^4.5.0"
+  }
+}
