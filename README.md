@@ -20,6 +20,7 @@ This is a tutorial on how to build a simple Messenger bot that utilizes Wit.ai t
 1. Create a new intent:
     1. Type `Where can I vote?` as an **utterance** and assign it an **intent** of `findPollingPlace`. Click **Train and Validate**.
     1. Type `When is the next election?` as an **utterance** and assign it an **intent** of `nextElection`. Click **Train and Validate**.
+1. This is the minimum setup required to get started, but you can continue to add utterances for each of the intents to help improve the accuracy of the bot. (Ex: `Where is my polling place?` or `When can I next vote?`)
 
 ## Setup Facebook App
 1. Create a new app on [Facebook Developers](https://developers.facebook.com/apps/) for your Messenger bot.
@@ -68,7 +69,12 @@ This is a tutorial on how to build a simple Messenger bot that utilizes Wit.ai t
   ![Add webhook](https://speakerbug.github.io/voterbot/images-for-readme/add-webhook.png)
 1. Use the values from terminal and enter them in as the callback URL like below and click **Verify and Save**.
   ![Add callback url](https://speakerbug.github.io/voterbot/images-for-readme/add-url.png)
-  NEED TO ADD SUBSCRIPTIONS? (note for henry)
+1. Click **Edit** on the page the callback URL you just added and subscribe it to the following actions:
+    1. `messages`
+    1. `messaging_postbacks`
+    1. `message_deliveries`
+    1. `message_reads`
+    ![Subscriptions for callback url](https://speakerbug.github.io/voterbot/images-for-readme/subscriptions.png)
 1. Next, generate a token for your page to be accessed by the app. Under **Access Tokens** click **Generate Token** for your page.
   ![Generate token](https://speakerbug.github.io/voterbot/images-for-readme/generate-token.png)
 1. Copy the token that was generated and paste it back in the terminal and hit enter. You should then be prompted for your **Facebook App Secret**. You can get this by clicking _Settings_ > _Basic_.
