@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="500" height="500" src="https://speakerbug.github.io/voterbot/images-for-readme/logo.png">
+  <img width="300" height="300" src="https://speakerbug.github.io/voterbot/images-for-readme/logo.png">
 </p>
 
 # voterbot
