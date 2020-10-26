@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="500" height="500" src="https://speakerbug.github.io/voterbot/images-for-readme/logo.png">
+</p>
+
 # voterbot
 A tutorial on how to use Wit.ai with a Messenger bot to help voters get information on how and when to vote.
 
